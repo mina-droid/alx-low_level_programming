@@ -1,8 +1,14 @@
 #include <stdio.h>
-/* this is main */
-int main(void) 
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
-char str[52] = "\"Programming is like building a multilingual puzzle";
-puts(str);
-return (0);
+    char str[52] = "\"Programming is like building a multilingual puzzle";
+    puts(str);
+    return (0);
 }
