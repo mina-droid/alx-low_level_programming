@@ -23,7 +23,7 @@ int main(void)
   }
    else if ((n % 10) == 0)
   {
-    printf("%d and is 0\n",(n % 10) )
+    printf("%d and is 0\n",(n % 10));
   }
    else if ((n % 10) < 6 && (n % 10) != 0)
   {
