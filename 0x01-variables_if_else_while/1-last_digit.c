@@ -18,7 +18,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	{
 		int r= (n % 10);
-	}
+	
 	printf("Last digit of %d is ", n);
 	
 if (r > 5)
@@ -33,5 +33,6 @@ else if ((n % 10) < 6 && (n % 10) != 0)
 {
 printf("%d and is less than 6 and not 0\n", r);
 }
+	}
 	return (0);
 }
