@@ -1,49 +1,50 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success/correct)
  */
-
 int main(void)
+
+
+
 {
-int i;
-int j;
-int k;
-int l;
-int c;
-for (i = 0; i < 10; i++)
+int first_nums;
+int second_nums;
+
+
+for (first_nums = 0; first_nums < 100 ; first_nums++)
 {
-for (j = 0; j < 10; j++)
+for (second_nums = first_nums + 1 ; second_nums < 100; second_nums++)
 {
-for (k = 0; k < 10; k++)
+
+putchar (first_nums / 10 + '0');
+putchar (first_nums % 10 + '0');
+
+
+putchar (' ');
+
+putchar (second_nums / 10 + '0');
+putchar (second_nums % 10 + '0');
+
+
+if (first_nums == 98 && second_nums == 99)
 {
-if (k > 0)
-{
- c = -1;
+break;
 }
-else
-{
-c = j;
-}
-for (l = c + 1; l < 10; l++)
-{
-putchar(i + '0');
-putchar(j + '0');
-putchar(' ');  
-putchar(k + '0');
-putchar(l + '0');  
-if (i == 9 && j == 8 && k == 9 && l == 9)
-{
-continue;
-}
+
+
 putchar(',');
-putchar(' ');  
+putchar (' ');
+
+
 }
+
 }
-}
-}
+
 putchar('\n');
+
+
 return (0);
+
 }
