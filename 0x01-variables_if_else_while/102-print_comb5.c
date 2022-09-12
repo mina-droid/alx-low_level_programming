@@ -12,13 +12,22 @@ int i;
 int j;
 int k;
 int l;
+int c;
 for (i = 0; i < 10; i++)
 {
 for (j = 0; j < 10; j++)
 {
 for (k = 0; k < 10; k++)
 {
-for (l = j + 1; l < 10; l++)
+if (k > 1)
+{
+ c = -1;
+}
+else
+{
+c = j;
+}
+for (l = c + 1; l < 10; l++)
 {
 putchar(i + '0');
 putchar(j + '0');
