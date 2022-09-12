@@ -20,9 +20,13 @@ for (k = 0; k < 10; k++)
 {
 if (k > 0)
 {
-  l = -1; 
-}  
-for (l = k + 1; l < 10; l++)
+  c = -1; 
+}
+else
+{
+c = k;  
+}
+for (l = c + 1; l < 10; l++)
 {
 putchar(i + '0');
 putchar(j + '0');
