@@ -7,15 +7,15 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
-int i = 0; 
+int i = 0;
 char ch[] = "_putchar";
 while (ch[i] != '\0')
 {
- _putchar(ch[i]);
- i++;
-}  
+_putchar(ch[i]);
+i++;
+}
 putchar('\n');
-return (0); 
+return (0);
 }
