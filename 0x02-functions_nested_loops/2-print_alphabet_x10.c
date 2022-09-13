@@ -21,10 +21,6 @@ void print_alphabet_x10(void)
  for (i = 1; i <= 10 ; i++)
  {
   print_alphabet();
-  if (i == 10)
-  {
-   continue;
-  }
   _putchar('\n');
  }
 }
