@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _putchar - Entry point
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void _putchar (void)
 {
 char *ch = '_putchar';
 while (*ch != '\0')
@@ -15,5 +15,4 @@ while (*ch != '\0')
  ch++;
 }  
 putchar('\n');
-return (0);
 }
