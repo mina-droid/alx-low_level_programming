@@ -20,7 +20,11 @@ void print_alphabet_x10(void)
  int i;
  for (i = 0; i < 11 ; i++)
  {
-  print_alphabet(); 
+  print_alphabet();
+  if (i == 10)
+  {
+   continue;
+  }
   _putchar('\n');
  }
 }
