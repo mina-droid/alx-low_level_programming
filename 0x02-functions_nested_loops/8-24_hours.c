@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
-* jack_bauer - prints the last digit of a number
+* jack_bauer - jack_bauer minutes song
 *
 * Parameters: none
 *
 *
-* Return: (lD) the last digit of a number
+* Return: void
 */
 
 void jack_bauer(void)
 {
-int r1 = (n / 10);
-int r2 = (10 * r1);
-int lD = (n - r2);
-if (n < 0)
+int first_nums;
+int second_nums;
+for (first_nums = 0; first_nums < 24 ; first_nums++)
 {
-lD = -1 * lD;
+for (second_nums = 1 ; second_nums < 60; second_nums++)
+{
+_putchar (first_nums / 10 + '0');
+_putchar (first_nums % 10 + '0');
+_putchar (':');
+_putchar (second_nums / 10 + '0');
+_putchar (second_nums % 10 + '0');
+_putchar('\n');
 }
-_putchar(lD + '0');
-return (lD);
+}
+
 }
