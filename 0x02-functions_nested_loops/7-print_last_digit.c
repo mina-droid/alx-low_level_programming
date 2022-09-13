@@ -17,8 +17,8 @@ int r2 = (10 * r1);
 int lD = (n - r2);
 if (n < 0)
 {
-lD = -1 * lD;  
+lD = -1 * lD;
 }
 _putchar(lD + '0');
-return (lD);  
+return (lD);
 }
