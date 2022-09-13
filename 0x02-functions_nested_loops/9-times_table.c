@@ -40,6 +40,7 @@ continue;
 _putchar (',');
 if ((i * j) > 9)
 {
+continue;
 }
 else
 {
