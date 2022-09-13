@@ -39,6 +39,10 @@ continue;
 }
 _putchar (',');
 _putchar (' ');
+if (i == 2)
+{
+continue;  
+} 
 _putchar (' ');  
 }
 _putchar ('\n');
