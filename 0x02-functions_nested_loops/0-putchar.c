@@ -9,7 +9,7 @@
 
 void _putchar (void)
 {
-char *ch = '_putchar';
+char *ch = "_putchar";
 while (*ch != '\0')
 {
  putchar(*ch);
