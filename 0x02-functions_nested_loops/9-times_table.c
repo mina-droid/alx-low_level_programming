@@ -19,9 +19,9 @@ for (i = 0; i < 10; i++)
 for (j = 0; j < 10; j++)
 {
 tArr[i][j] = (i * j);
-_putchar((tArr[i][j]) + '0');
+_putchar((i * j)+ '0');
 _putchar (',');
-_putchar (' ');  
+_putchar (' ');
 }
 _putchar ('\n');
 }
