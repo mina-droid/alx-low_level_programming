@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* print_last_digit - checks if a number is positive or negative or zero
+* print_last_digit - prints the last digit of a number
 *
 * Parameters: Integer
 *
 * @n: int
 *
-* Return: (-n) if it is negative (n) otherwise
+* Return: (lD) the last digit of a number
 */
 
 int print_last_digit(int n)
