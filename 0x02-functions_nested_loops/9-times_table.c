@@ -44,6 +44,7 @@ _putchar (' ');
 }
 else
 {
+_putchar('M')
 _putchar (' ');
 _putchar (' '); 
 }
