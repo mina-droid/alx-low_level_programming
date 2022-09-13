@@ -19,7 +19,8 @@ if (n / 10)
 {
 print_last_digit(n / 10);
 }
-_putchar(n % 10 + '0');  
+_putchar(n % 10 + '0');
+return (0);
 }
 
 void times_table(void)
