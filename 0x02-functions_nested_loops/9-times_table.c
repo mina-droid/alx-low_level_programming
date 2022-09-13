@@ -42,8 +42,11 @@ _putchar (' ');
 if ((i * j) > 9)
 {
 continue;  
-} 
+}
+else
+{
 _putchar (' ');  
+}
 }
 _putchar ('\n');
 }
