@@ -9,7 +9,7 @@
 *
 * @b: Number 2
 *
-* Return: (1) if it is Positive (0) if it is zero (-) otherwise
+* Return: result
 */
 
 int add(int a, int b)
