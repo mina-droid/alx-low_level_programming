@@ -38,14 +38,14 @@ if (j == 9)
 continue;
 }
 _putchar (',');
-_putchar (' ');
 if ((i * j) > 9)
 {
-continue;  
+_putchar (' '); 
 }
 else
 {
-_putchar (' ');  
+_putchar (' ');
+_putchar (' '); 
 }
 }
 _putchar ('\n');
