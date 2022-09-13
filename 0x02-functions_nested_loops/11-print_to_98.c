@@ -42,18 +42,33 @@ if (n < 98)
 {
 for (i = n; i < 99; i++)
 {
-print_last_digit(n); 
-}  
+print_last_digit(n);
+if (i == 98)
+{
+continue  
+}
+_putchar(',');
+_putchar(' ');
+}
+_putchar('\n');  
 }
 else if (n > 98)
 {
 for (i = n; i > 97; i--)
 {
 print_last_digit(n); 
-}  
+if (i == 98)
+{
+continue  
+}
+_putchar(',');
+_putchar(' ');
+}
+_putchar('\n'); 
 }
 else
 {
 print_last_digit(98);
+_putchar('\n');
 }
 }
