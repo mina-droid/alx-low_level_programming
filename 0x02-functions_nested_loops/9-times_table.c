@@ -39,7 +39,7 @@ continue;
 }
 _putchar (',');
 _putchar (' ');
-if (i == 2)
+if (i * j > 9)
 {
 continue;  
 } 
