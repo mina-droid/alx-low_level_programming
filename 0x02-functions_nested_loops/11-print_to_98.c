@@ -45,7 +45,7 @@ for (i = n; i < 99; i++)
 print_last_digit(n);
 if (i == 98)
 {
-continue  
+continue;  
 }
 _putchar(',');
 _putchar(' ');
@@ -59,7 +59,7 @@ for (i = n; i > 97; i--)
 print_last_digit(n); 
 if (i == 98)
 {
-continue  
+continue;  
 }
 _putchar(',');
 _putchar(' ');
