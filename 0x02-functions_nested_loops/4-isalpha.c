@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - checks if a character is from the alphabet or not
+* _isalpha - checks if a character is from the alphabet or not
 *
 * Parameters: Takes a char or int
 *
