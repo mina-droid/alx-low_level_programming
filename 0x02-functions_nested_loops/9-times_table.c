@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* times_table - print 9 times table
+* print_last_digit - prints the last digit of a number
 *
-* Parameters: none
+* Parameters: Integer
 *
+* @n: int
 *
-* Return: void
+* Return: (lD) the last digit of a number
 */
-
 int  print_last_digit(int n)
 {
 if (n == 0)
@@ -23,6 +23,15 @@ print_last_digit(n / 10);
 _putchar(n % 10 + '0');
 return (0);
 }
+
+/**
+* times_table - print 9 times table
+*
+* Parameters: none
+*
+*
+* Return: void
+*/
 
 void times_table(void)
 {
