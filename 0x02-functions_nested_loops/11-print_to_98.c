@@ -12,6 +12,11 @@
 
 int  print_last_digit(int n)
 {
+ if (n < 0) 
+{
+putchar('-');
+n = -n;
+}
 if (n == 0)
 {
 _putchar('0');
@@ -45,26 +50,26 @@ for (i = n; i < 99; i++)
 print_last_digit(i);
 if (i == 98)
 {
-continue;  
+continue;
 }
 _putchar(',');
 _putchar(' ');
 }
-_putchar('\n');  
+_putchar('\n');
 }
 else if (n > 98)
 {
 for (i = n; i > 97; i--)
 {
-print_last_digit(i); 
+print_last_digit(i);
 if (i == 98)
 {
-continue;  
+continue;
 }
 _putchar(',');
 _putchar(' ');
 }
-_putchar('\n'); 
+_putchar('\n');
 }
 else
 {
