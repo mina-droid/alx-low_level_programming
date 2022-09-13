@@ -38,9 +38,9 @@ if (j == 9)
 continue;
 }
 _putchar (',');
-if ((i * j) > 9)
+if (((i + 1) * (j + 1)) > 9)
 {
-continue;
+_putchar (' ');
 }
 else
 {
