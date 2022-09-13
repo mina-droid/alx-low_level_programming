@@ -40,11 +40,9 @@ continue;
 _putchar (',');
 if ((i * j) > 9)
 {
-_putchar (' '); 
 }
 else
 {
-_putchar('M');
 _putchar (' ');
 _putchar (' '); 
 }
