@@ -19,6 +19,6 @@ if (n < 0)
 {
 lD = -1 * lD;  
 }
-_putchar(lD);
+_putchar(lD + '0');
 return (lD);  
 }
