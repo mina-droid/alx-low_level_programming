@@ -15,7 +15,7 @@ if (n == 0)
 {
 _putchar('0');  
 }
-if (n / 10)
+else if (n / 10)
 {
 print_last_digit(n / 10);
 }
