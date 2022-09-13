@@ -18,7 +18,7 @@ _putchar(c);
 void print_alphabet_x10(void)
 {
  int i;
- for (i = 0; i < 11 ; i++)
+ for (i = 1; i <= 10 ; i++)
  {
   print_alphabet();
   if (i == 10)
