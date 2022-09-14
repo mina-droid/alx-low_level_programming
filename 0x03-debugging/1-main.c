@@ -15,9 +15,9 @@ int main(void)
 /*
 *         while (i < 10)
 *         {
-*
 *putchar(i);
-      }
+* infinte loop bec i dose not inc
+}
 */
         printf("Infinite loop avoided! \\o/\n");
 
