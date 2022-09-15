@@ -11,8 +11,8 @@ int i = 0;
 	while (i < n && n > 0)
 	{
 		_putchar('\');
-    _putchar('\n');
-    _putchar(' ');
+                _putchar('\n');
+                _putchar(' ');
 		i++;
 	}
 	_putchar('\n');
