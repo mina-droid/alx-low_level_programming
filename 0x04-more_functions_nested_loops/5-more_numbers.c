@@ -38,7 +38,7 @@ void more_numbers(void)
 		while (j < 15)
 		{
 			print_last_digit(j);
-			j++
+			j++;
 		}
 		_putchar('\n');
 		i++;
