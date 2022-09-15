@@ -17,7 +17,7 @@ int i = 0;
 	while (i < n)
 	{
 		_putchar('_');
-		i++
+		i++;
 	}
 	_putchar('\n');
  }
