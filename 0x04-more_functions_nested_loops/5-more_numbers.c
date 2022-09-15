@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * print_last_digit - prints the last digit of a number
 *
@@ -23,24 +22,22 @@ print_last_digit(n / 10);
 _putchar(n % 10 + '0');
 return (0);
 }
-
 /**
  * more_numbers - prints numbers
  * Return:0
  */
-
 void more_numbers(void)
 {
-	int i = 0;
-	int j = 0;
-	while (i < 10)
-	{
-		while (j < 15)
-		{
-			print_last_digit(j);
-			j++;
-		}
-		_putchar('\n');
-		i++;
-	}
+int i = 0;
+int j = 0;
+while (i < 10)
+{
+while (j < 15)
+{
+print_last_digit(j);
+j++;
+}
+_putchar('\n');
+i++;
+}
 }
