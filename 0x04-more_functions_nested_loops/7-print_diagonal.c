@@ -10,7 +10,7 @@ int i = 0;
 
 	while (i < n && n > 0)
 	{
-		_putchar('\');
+		_putchar('\\');
                 _putchar('\n');
                 _putchar(' ');
 		i++;
