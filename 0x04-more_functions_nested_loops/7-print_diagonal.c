@@ -1,24 +1,29 @@
 #include "main.h"
 /**
- * print_diagonal - prints numbers
- * @n: points
- * Return:0
+ * print_diagonal - check for a digit
+ * @n : number of \\ to be printed
+ * Return:void
  */
+
 void print_diagonal(int n)
 {
-	int i = 0, j;
+
+	int i = 0, ii;
+
 	while (i < n && n > 0)
 	{
-		j = 0;
-		while (j < i)
+		ii = 0;
+		while (ii < i)
 		{
 			_putchar(' ');
-			j++;
+			ii++;
 		}
+
 		_putchar('\\');
-                _putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 	if (i == 0)
-	_putchar('\n');
+		_putchar('\n');
+
 }
