@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - check for a digit
- * Return:void
+ * Return: int
  */
 
 int main(void)
@@ -30,6 +30,5 @@ printf("%d", i);
 putchar(' ');
 }
 }
-putchar('\n');
 return(0);
 }
