@@ -43,5 +43,4 @@ return (0);
 void print_number(int n)
 {
 print_last_digit(n);
-_putchar('\n');
 }
