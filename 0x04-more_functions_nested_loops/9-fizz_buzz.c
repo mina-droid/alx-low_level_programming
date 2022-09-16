@@ -32,4 +32,5 @@ printf("%d", i);
 _putchar(' ');
 }
 }
+return (0);
 }
