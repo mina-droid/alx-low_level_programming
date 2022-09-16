@@ -1,19 +1,20 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
  * print_triangle - check for a digit
- * @n : number of \\ to be printed
+ * @size : integer type
  * Return:void
  */
 
 void print_triangle(int size)
 {
 
-	int i = 0, ii,j;
+	int i = 1, ii, j;
 
-	while (i < size && size > 0)
+	while (i <= size && size > 0)
 	{
 		ii = 0;
-		while (ii < size)
+		while (ii < size - i)
 		{
 			_putchar(' ');
 			ii++;
@@ -21,13 +22,13 @@ void print_triangle(int size)
 		j = 0;
 		while (j < i)
 		{
-             		_putchar('#');
+			_putchar('#');
 			j++;
 		}
+
 		_putchar('\n');
 		i++;
 	}
-	if (i == 0)
+	if (i == 1)
 		_putchar('\n');
-
 }
