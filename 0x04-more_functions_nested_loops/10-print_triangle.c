@@ -1,24 +1,29 @@
 #include "main.h"
 /**
  * print_triangle - check for a digit
- * @n : number of _ to be printed
+ * @n : number of \\ to be printed
  * Return:void
  */
 
 void print_triangle(int size)
 {
 
-	int i = 0, ii;
+	int i = 0, ii,j;
 
-	while (i < n && n > 0)
+	while (i < size && size > 0)
 	{
 		ii = 0;
-		while (ii < n)
+		while (ii < size)
 		{
-			_putchar('#');
+			_putchar(' ');
 			ii++;
 		}
-
+		j = 0;
+		while (j < i)
+		{
+             		_putchar('#');
+			j++;
+		}
 		_putchar('\n');
 		i++;
 	}
