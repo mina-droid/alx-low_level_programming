@@ -1,36 +1,6 @@
 #include "main.h"
 
 /**
-* print_last_digit - prints the last digit of a number
-*
-* Parameters: Integer
-*
-* @n: int
-*
-* Return: (lD) the last digit of a number
-*/
-
-int  print_last_digit(int n)
-{
-if (n < 0)
-{
-_putchar('-');
-n = -n;
-}
-if (n == 0)
-{
-_putchar('0');
-return (0);
-}
-else if (n / 10)
-{
-print_last_digit(n / 10);
-}
-_putchar(n % 10 + '0');
-return (0);
-}
-
-/**
 * print_number - prints the last digit of a number
 *
 * Parameters: Integer
@@ -42,5 +12,31 @@ return (0);
 
 void print_number(int n)
 {
-print_last_digit(n);
+
+	int d = 1, i = 0, ii = 0;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
+	while (n / d != 0)
+	{
+		d *= 10;
+		i++;
+	}
+	d = d / 10;
+
+	while (ii < i)
+	{
+		_putchar('0' + n / d);
+		n = n - (n / d) * d;
+		d = d / 10;
+		ii++;
+	}
+
+	if (i == 0)
+		_putchar('0' + n);
+
 }
