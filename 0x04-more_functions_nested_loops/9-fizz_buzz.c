@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * print_square - check for a digit
- * @n : number of _ to be printed
+ * main - check for a digit
  * Return:void
  */
 
@@ -32,5 +31,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return (0);
+return(0);
 }
