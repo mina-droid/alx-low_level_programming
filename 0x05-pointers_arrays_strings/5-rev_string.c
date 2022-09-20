@@ -47,7 +47,6 @@ return (count);
 void rev_string(char *s)
 {
 int strL = _strlen(s);
-int i;
 char *c = &s[strL];
 while (*s != *c)
 {
