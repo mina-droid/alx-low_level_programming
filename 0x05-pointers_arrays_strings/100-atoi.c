@@ -33,12 +33,12 @@ while (s[i] == ' ')
 {
 i++;
 }
+while (s[i] != '\0')
+{
 if (s[i] == '-' || s[i] == '+')
 {
 sign = 1 - 2 * (s[i++] == '-');
 }
-while (s[i] != '\0')
-{
 if (_isdigit(s[i]))
 {
 if (base > INT_MAX / 10
