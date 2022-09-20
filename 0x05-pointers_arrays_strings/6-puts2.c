@@ -20,7 +20,7 @@ return (count);
 }
 
 /**
-* _puts-prints a string followed by a new line, to stdout
+* puts2-prints a string followed by a new line, to stdout
 *
 * @str: string
 *
@@ -31,7 +31,7 @@ void puts2(char *str)
 {
 int strL = _strlen(str);
 int i;
-for (i = 0; i < strL; i++)
+for (i = 0; i < strL; i += 2)
 {
 _putchar(str[i]);
 }
