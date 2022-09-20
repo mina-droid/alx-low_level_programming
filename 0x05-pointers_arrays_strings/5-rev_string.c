@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* swap_int-swaps the values of two integers
+* swap_chars-swaps the values of two integers
 *
 * @a: int pointer1
 *
@@ -10,7 +10,7 @@
 * Return: void
 */
 
-void swap_int(char *a, char *b)
+void swap_chars(char *a, char *b)
 {
 char tmp = *a;
 *a = *b;
