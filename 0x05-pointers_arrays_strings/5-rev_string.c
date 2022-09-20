@@ -39,7 +39,7 @@ _putchar('\n');
 }
 
 /**
-* _puts-prints a string followed by a new line, to stdout
+* _puts_rev-prints a string followed by a new line, to stdout
 *
 * @str: string
 *
@@ -68,5 +68,5 @@ _putchar('\n');
 void rev_string(char *s)
 {
 _puts(s);
-_puts_rev(s);  
+_puts_rev(s);
 }
