@@ -39,14 +39,14 @@ _putchar('\n');
 }
 
 /**
-* print_rev- prints a string, in reverse followed by a new line
+* rev_string- prints a string, in reverse followed by a new line
 *
 * @s: string
 *
 * Return: void
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 _puts(s);
 }
