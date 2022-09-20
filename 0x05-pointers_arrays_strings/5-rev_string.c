@@ -29,16 +29,16 @@ return (count);
 
 void rev_string(char *s)
 {
-int strL = _strlen(str);
+int strL = _strlen(s);
 int i;
 for (i = 0; i < strL; i++)
 {
-_putchar(str[i]);
+_putchar(s[i]);
 }
 _putchar('\n');
 for (i = strL - 1; i > -1; i--)
 {
-_putchar(str[i]);
+_putchar(s[i]);
 }
 _putchar('\n');
 }
