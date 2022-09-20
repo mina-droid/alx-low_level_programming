@@ -34,7 +34,7 @@ int n = (strL / 2);
 int i;
 if (strL % 2 != 0)
 {
-n++; 
+n++;
 }
 for (i = n; i < strL; i++)
 {
