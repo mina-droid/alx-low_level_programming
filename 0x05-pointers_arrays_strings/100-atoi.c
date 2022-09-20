@@ -37,6 +37,6 @@ if (_isdigit(s[i]) && s[i - 1] == '-')
 sign = -1;
 }
 res = res * 10 + s[i] - '0';
-return sign * res;
 }
+return (sign * res);
 }
