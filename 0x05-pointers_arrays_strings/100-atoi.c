@@ -1,61 +1,28 @@
 #include "main.h"
-#include <limits.h>
-/**
- * _isdigit - checks for upper case charchter
- *
- * @c: the ascii number of the digit
- * Return: 1 if digit 0 otherwise .
- */
-int _isdigit(int c)
-{
-if (c >= 48 && c <= 57)
-{
-return (1);
-}
-else
-{
-return (0);
-}
-}
 
 /**
-* _atoi-prints a string followed by a new line, to stdout
-*
-* @s: string
-*
-* Return: the intger of that string
-*/
+ * _atoi - convert a string to an integer.
+ * @s: char type string
+ * Return: integer converted
+ */
 
 int _atoi(char *s)
 {
-int sign = 1, base = 0, i = 0;
-while (s[i] == ' ')
-{
-i++;
-}
-while (s[i] != '\0')
-{
-if (s[i] == '-' || s[i] == '+')
-{
-sign = 1 - 2 * (s[i++] == '-');
-}
-if (_isdigit(s[i]))
-{
-if (base > INT_MAX / 10
-|| (base == INT_MAX / 10
-&& s[i] - '0' > 7))
-{
-if (sign == 1)
-return INT_MAX;
-else
-return INT_MIN;
-}
-base = 10 * base + (s[i++] - '0');
-}
-}
-if (base == 0)
-{
-return (0);
-}
-return base * sign;
+	int sign = 1, resp = 0, firstNum;
+
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	{
+		if (s[firstNum] == '-')
+		{
+			sign *= -1;
+		}
+	}
+
+	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	{
+		resp *= 10;
+		resp += (s[i] - 48);
+	}
+
+	return (sign * resp);
 }
