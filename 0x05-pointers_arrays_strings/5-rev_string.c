@@ -1,57 +1,30 @@
 #include "main.h"
 
 /**
-* swap_chars-swaps the values of two integers
-*
-* @a: int pointer1
-*
-* @b: int pointer2
-*
-* Return: void
-*/
-
-void swap_chars(char *a, char *b)
-{
-char tmp = *a;
-*a = *b;
-*b = tmp;
-}
-
-/**
-* _strlen-swaps the values of two integers
-*
-* @s: string
-*
-* Return: int
-*/
-
-int _strlen(char *s)
-{
-int count = 0;
-while (*s != '\0')
-{
-count++;
-s++;
-}
-return (count);
-}
-
-/**
-* rev_string- prints a string, in reverse followed by a new line
-*
-* @s: string
-*
-* Return: void
+ * rev_string - prints reversed string, followed by a new line
+ * @s: pointer to the string to print
+ * Return: void
 */
 
 void rev_string(char *s)
 {
-int strL = _strlen(s);
-char *c = &s[strL];
-while (*s != *c)
+
+int len, i, half;
+char temp;
+
+for (len = 0; s[len] != '\0'; len++)
+;
+
+i = 0;
+
+half = len / 2;
+
+while (half--)
 {
-swap_chars(s,c);
-s++;
-c++;
+	temp = s[len - i - 1];
+	s[len - i - 1] = s[i];
+	s[i] = temp;
+	i++;
 }
+
 }
