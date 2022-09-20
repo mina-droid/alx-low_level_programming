@@ -31,9 +31,22 @@ void _puts(char *str)
 {
 int strL = _strlen(str);
 int i;
-for (i = 0; i < strL; i++)
+for (i = strL; i > -1; i--)
 {
 _putchar(str[i]);
 }
 _putchar('\n');
+}
+
+/**
+* print_rev- prints a string, in reverse followed by a new line
+*
+* @s: string
+*
+* Return: void
+*/
+
+void print_rev(char *s)
+{
+_puts(s);
 }
