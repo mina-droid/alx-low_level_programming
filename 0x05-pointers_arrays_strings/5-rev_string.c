@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+* swap_int-swaps the values of two integers
+*
+* @a: int pointer1
+*
+* @b: int pointer2
+*
+* Return: void
+*/
+
+void swap_int(char *a, char *b)
+{
+char tmp = *a;
+*a = *b;
+*b = tmp;
+}
+
+/**
 * _strlen-swaps the values of two integers
 *
 * @s: string
@@ -31,14 +48,11 @@ void rev_string(char *s)
 {
 int strL = _strlen(s);
 int i;
-for (i = 0; i < strL; i++)
+char *c = s[strL];
+while (*s != *c)
 {
-_putchar(s[i]);
+swap_int(s,c);
+s++;
+c++;
 }
-_putchar('\n');
-for (i = strL - 1; i > -1; i--)
-{
-_putchar(s[i]);
-}
-_putchar('\n');
 }
