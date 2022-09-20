@@ -31,7 +31,7 @@ void _puts(char *str)
 {
 int strL = _strlen(str);
 int i;
-for (i = strL; i > 0; i--)
+for (i = strL - 1; i > -1; i--)
 {
 _putchar(str[i]);
 }
