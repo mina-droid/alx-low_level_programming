@@ -1,44 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* _strlen-swaps the values of two integers
+* print_array-prints a string followed by a new line, to stdout
 *
-* @s: string
+* @a: array
 *
-* Return: int
-*/
-
-int _strlen(char *s)
-{
-int count = 0;
-while (*s != '\0')
-{
-count++;
-s++;
-}
-return (count);
-}
-
-/**
-* puts_half-prints a string followed by a new line, to stdout
-*
-* @str: string
+* @n: size
 *
 * Return: void
 */
 
-void puts_half(char *str)
+void print_array(int *a, int n);
 {
-int strL = _strlen(str);
-int n = (strL / 2);
 int i;
-if (strL % 2 != 0)
+for (i = 0; i < n; i++)
 {
-n++;
+printf("%d", a[i]);
+if (i == (n - 1))
+{
+continue;
 }
-for (i = n; i < strL; i++)
-{
-_putchar(str[i]);
+_putchar(',');
+_putchar(' ');
 }
 _putchar('\n');
 }
