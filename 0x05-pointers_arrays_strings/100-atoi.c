@@ -53,5 +53,9 @@ return INT_MIN;
 base = 10 * base + (s[i++] - '0');
 }
 }
+if (base == 0)
+{
+return (0);
+}
 return base * sign;
 }
