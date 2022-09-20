@@ -2,22 +2,14 @@
 
 
 /**
-* _strcpy-prints a string followed by a new line, to stdout
+* _atoi-prints a string followed by a new line, to stdout
 *
-* @dest: destintion
+* @s: string
 *
-* @src: sourc
-*
-* Return: void
+* Return: the intger of that string
 */
 
-char *_strcpy(char *dest, char *src)
+int _atoi(char *s)
 {
-int i;
-for (i = 0; src[i] != '\0'; i++)
-{
-dest[i] = src[i];
-}
-dest[i] = '\0';
-return (dest);
+while
 }
