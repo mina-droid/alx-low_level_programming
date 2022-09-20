@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
-* _strlen-swaps the values of two integers
+* _puts-prints a string followed by a new line, to stdout
 *
-* @s: string
+* @str: string
 *
-* Return: int
+* Return: void
 */
 
-int _strlen(char *s)
+void _puts(char *str)
 {
-int count = 0;
-while (*s != '\0')
+int strL = _strlen(str);
+int i;
+for (i = 0; i <= strL; i++)
 {
-count++;
-s++;
+_putchar(str[i]);
 }
-return (count);
 }
