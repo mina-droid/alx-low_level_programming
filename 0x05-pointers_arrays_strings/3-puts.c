@@ -35,4 +35,5 @@ for (i = 0; i <= strL; i++)
 {
 _putchar(str[i]);
 }
+_putchar('\n');
 }
