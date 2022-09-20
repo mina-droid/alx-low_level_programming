@@ -20,7 +20,7 @@ return (count);
 }
 
 /**
-* puts2-prints a string followed by a new line, to stdout
+* puts_half-prints a string followed by a new line, to stdout
 *
 * @str: string
 *
@@ -31,7 +31,7 @@ void puts_half(char *str)
 {
 int strL = _strlen(str);
 int i;
-for (i = 0; i < strL; i += 2)
+for (i = (strL / 2); i < strL; i++)
 {
 _putchar(str[i]);
 }
