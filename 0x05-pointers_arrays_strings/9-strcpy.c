@@ -13,6 +13,6 @@
 
 char *_strcpy(char *dest, char *src)
 {
-while ((*destination++ = *source++) != '\0');
+while ((*dest++ = *src++) != '\0');
 return (dest);
 }
