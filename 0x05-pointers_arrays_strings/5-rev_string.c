@@ -48,10 +48,10 @@ void rev_string(char *s)
 {
 int strL = _strlen(s);
 int i;
-char *c = s[strL];
+char *c = &s[strL];
 while (*s != *c)
 {
-swap_int(s,c);
+swap_chars(s,c);
 s++;
 c++;
 }
