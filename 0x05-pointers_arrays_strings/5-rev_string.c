@@ -31,6 +31,25 @@ void _puts(char *str)
 {
 int strL = _strlen(str);
 int i;
+for (i = 0; i < strL; i++)
+{
+_putchar(str[i]);
+}
+_putchar('\n');
+}
+
+/**
+* _puts-prints a string followed by a new line, to stdout
+*
+* @str: string
+*
+* Return: void
+*/
+
+void _puts_rev(char *str)
+{
+int strL = _strlen(str);
+int i;
 for (i = strL - 1; i > -1; i--)
 {
 _putchar(str[i]);
@@ -49,4 +68,5 @@ _putchar('\n');
 void rev_string(char *s)
 {
 _puts(s);
+_puts_rev(s);  
 }
