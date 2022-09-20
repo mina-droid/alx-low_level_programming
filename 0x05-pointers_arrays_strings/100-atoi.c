@@ -1,6 +1,36 @@
 #include "main.h"
 
 /**
+* print_last_digit - prints the last digit of a number
+*
+* Parameters: Integer
+*
+* @n: int
+*
+* Return: (lD) the last digit of a number
+*/
+
+int  print_last_digit(int n)
+{
+if (n < 0)
+{
+_putchar('-');
+n = -n;
+}
+if (n == 0)
+{
+_putchar('0');
+return (0);
+}
+else if (n / 10)
+{
+print_last_digit(n / 10);
+}
+_putchar(n % 10 + '0');
+return (0);
+}
+
+/**
  * _isdigit - checks for upper case charchter
  *
  * @c: the ascii number of the digit
@@ -28,11 +58,16 @@ return (0);
 
 int _atoi(char *s)
 {
-while (*s != '\0')
+int res = 0;
+int sign = 1;
+int i = 0;
+for (; s[i] != '\0'; i++)
+if (_isdigit(s[i]) && s[i - 1] == '-')
 {
-if (_isdigit(*s) && *(s--) == '-')
-{
-_putchar
+sign = -1;
+}
+res = res * 10 + s[i] - '0';
+return sign * res;
 }
 }
 }
