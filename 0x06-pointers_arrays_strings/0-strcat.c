@@ -30,13 +30,13 @@ return (count);
 
 char *_strcat(char *dest, char *src)
 {
-	int dest_len = _strlen(dest);
-	while (*src != '\0')
-	{
-		dest[dest_len] = *src;
-		dest_len++;
-		src++;
-	}
-	dest[dest_len] = '\0';
-	return (dest);
+int dest_len = _strlen(dest);
+while (*src != '\0')
+{
+dest[dest_len] = *src;
+dest_len++;
+src++;
+}
+dest[dest_len] = '\0';
+return (dest);
 }
