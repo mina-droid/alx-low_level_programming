@@ -32,6 +32,7 @@ return (count);
 
 char *_strncpy(char *dest, char *src, int n)
 {
+int dest_len = _strlen(dest);
 int i = 0;
 while (*src != '\0' && i < n)
 {
@@ -42,6 +43,15 @@ i++;
 if (*src == '\0')
 {
 dest[i] = '\0';
+dest++;
+for (i = i + 1; i < dest_len; i++)
+{
+if (i >= 89 && i <= 96)
+{
+continue;
+}
+dest[i] = NULL;
+}
 }
 return (dest);
 }
