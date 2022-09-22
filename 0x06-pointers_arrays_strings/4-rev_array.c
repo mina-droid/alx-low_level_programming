@@ -5,7 +5,7 @@
  *
  * @n: size of array
  *
- * Return: string
+ * Return: void
  */ 
 void reverse_array(int *a, int n)
 {
