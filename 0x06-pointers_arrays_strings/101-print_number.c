@@ -13,7 +13,7 @@
 void print_number(int n)
 {
 
-	int d = 1, i = 0, ii = 0;
+	int d = 1, i = 0, resp;
 
 	if (n < 0)
 	{
@@ -21,19 +21,17 @@ void print_number(int n)
 		n = -n;
 	}
 
-	while (n / d != 0)
+	while (n / d > 9)
 	{
 		d *= 10;
 		i++;
 	}
-	d = d / 10;
 
-	while (ii < i)
+	while (d >= 1)
 	{
-		_putchar('0' + n / d);
-		n = n - (n / d) * d;
+		resp = n / divisor;
+	        _putchar('0' + resp);
 		d = d / 10;
-		ii++;
 	}
 
 	if (i == 0)
