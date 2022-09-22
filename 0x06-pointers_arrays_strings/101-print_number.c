@@ -31,6 +31,7 @@ void print_number(int n)
 	{
 		resp = n / d;
 	        _putchar('0' + resp);
+		n %= d;
 		d = d / 10;
 	}
 
