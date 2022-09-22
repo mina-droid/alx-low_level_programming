@@ -29,7 +29,7 @@ void print_number(int n)
 
 	while (d >= 1)
 	{
-		resp = n / divisor;
+		resp = n / d;
 	        _putchar('0' + resp);
 		d = d / 10;
 	}
