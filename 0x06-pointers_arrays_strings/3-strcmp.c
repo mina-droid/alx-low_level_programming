@@ -39,7 +39,7 @@ if (s1[i] != s2[i])
 res = s1[i] - s2[i];
 break;
 }
-i++;  
+i++;
 }
 return (res);
 }
