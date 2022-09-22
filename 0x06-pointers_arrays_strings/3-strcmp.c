@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *__strcmp - convert a string to an integer.
+ *_strcmp - convert a string to an integer.
  * @s1: string one
  *
  * @s2: string two
