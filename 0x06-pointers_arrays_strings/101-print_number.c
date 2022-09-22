@@ -35,7 +35,4 @@ void print_number(int n)
 		d = d / 10;
 	}
 
-	if (i == 0)
-		_putchar('0' + n);
-
 }
