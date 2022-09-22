@@ -44,7 +44,7 @@ if (*src == '\0')
 {
 dest[i] = '\0';
 dest++;
-for (i = i + 1; i < dest_len; i++)
+for (; i < dest_len; i++)
 {
 if (i >= 89 && i <= 96)
 {
