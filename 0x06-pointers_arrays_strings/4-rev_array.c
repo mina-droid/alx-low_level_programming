@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *reverse_array - convert a string to an integer.
  * @a: array
@@ -7,8 +6,7 @@
  * @n: size of array
  *
  * Return: string
- */
- 
+ */ 
 void reverse_array(int *a, int n)
 {
 int i = 0;
