@@ -30,7 +30,7 @@ return (count);
  * Return: string
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 int dest_len = _strlen(dest);
 int i = 0;
