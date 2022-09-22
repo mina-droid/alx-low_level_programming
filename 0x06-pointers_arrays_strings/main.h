@@ -8,3 +8,4 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 int _islower(int c);
+int _isalpha(int c);
