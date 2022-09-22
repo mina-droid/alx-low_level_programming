@@ -31,16 +31,15 @@ return (count);
 int _strcmp(char *s1, char *s2)
 {
 int i = 0;
-while (*src != '\0' && i < n)
+int res = 0;
+while (s1[i] != '\0' && s2[i] != '\0')
 {
-dest[i] = *src;
-src++;
-i++;
-}
-while (i < n)
+if (s1[i] != s2[i])
 {
-dest[i] = '\0';
-i++;
+res = s1[i] - s2[i];
+break;
 }
-return (dest);
+i++;  
+}
+return (res);
 }
