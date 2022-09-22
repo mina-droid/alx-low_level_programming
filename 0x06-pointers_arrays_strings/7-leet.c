@@ -1,21 +1,27 @@
-/**
-* _islower - checks if a character is lowercase or not
-*
-* Parameters: Takes a char or int
-*
-* @c: a char or int
-*
-* Return: (1) if it is lower (0) otherwise
-*/
+#include "main.h"
 
-int _islower(int c)
+/**
+ *leet - convert a string to an integer.
+ * @s: string
+ * Return: void
+ */
+
+char *leet(char *s)
 {
-if (c >= 97 && c <= 122)
+int lowerCase [] = {97, 101, 111, 116, 108};
+int upperCase [] = {65, 69, 79, 84, 76};
+int numbersArr [] = {52, 51, 48, 55, 49};
+int i;
+int j;
+for (i = 0; s[i] != '\0'; i++)
 {
-return (1);
+for (j = 0; j < 5; j++)
+{
+if (s[i] == lowerCase[j] || s[i] == upperCase[j])
+{
+s[i] = numbersArr[j];
 }
-else
-{
-return (0);
 }
+}
+return (s);
 }
