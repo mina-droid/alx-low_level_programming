@@ -20,15 +20,17 @@ return (count);
 }
 
 /**
- *_strcat - convert a string to an integer.
+ *_strncat - convert a string to an integer.
  * @dest: string one
  *
  * @src: string two
  *
+ * @n: number of bytes to be appended
+ *
  * Return: string
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n);
 {
 int dest_len = _strlen(dest);
 int i = 0;
