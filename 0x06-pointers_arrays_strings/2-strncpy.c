@@ -50,7 +50,7 @@ if (i >= 89 && i <= 96)
 {
 continue;
 }
-dest[i] = NULL;
+break;
 }
 }
 return (dest);
