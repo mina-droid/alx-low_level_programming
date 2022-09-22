@@ -20,27 +20,25 @@ return (count);
 }
 
 /**
- *_strncat - convert a string to an integer.
+ *_strncpy - convert a string to an integer.
  * @dest: string one
  *
  * @src: string two
  *
- * @n: number of bytes to be appended
+ * @n: number of bytes to be copied
  *
  * Return: string
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int dest_len = _strlen(dest);
 int i = 0;
 while (*src != '\0' && i < n)
 {
-dest[dest_len] = *src;
-dest_len++;
+dest[i] = *src;
 src++;
 i++;
 }
-dest[dest_len] = '\0';
+dest[i] = '\0';
 return (dest);
 }
