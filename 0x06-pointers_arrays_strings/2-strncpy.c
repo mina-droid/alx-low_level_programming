@@ -40,17 +40,10 @@ dest[i] = *src;
 src++;
 i++;
 }
-if (*src == '\0')
+while (i < n)
 {
 dest[i] = '\0';
-for (; i < dest_len; i++)
-{
-if (i >= 90 && i <= 96)
-{
-continue;
-}
-dest[i] = '\0';
-}
+i++;
 }
 return (dest);
 }
