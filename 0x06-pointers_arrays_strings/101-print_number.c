@@ -13,26 +13,22 @@
 void print_number(int n)
 {
 
-	int d = 1, i = 0, resp;
+int divisor = 1, i, resp;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
+if (n < 0)
+{
+	_putchar('-');
+	n *= -1;
+}
 
-	while (n / d > 9)
-	{
-		d *= 10;
-		i++;
-	}
+for (i = 0; n / divisor > 9; i++, divisor *= 10)
+;
 
-	while (d >= 1)
-	{
-		resp = n / d;
-	        _putchar('0' + resp);
-		n %= d;
-		d = d / 10;
-	}
+for (; divisor >= 1; n %= divisor, divisor /= 10)
+{
+	resp = n / divisor;
+	_putchar('0' + resp);
+
+}
 
 }
