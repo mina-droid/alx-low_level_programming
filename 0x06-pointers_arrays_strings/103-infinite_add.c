@@ -112,4 +112,5 @@ for (i = 0; i < nSmall; i++)
 {
 sum = ((n1[i] - '0')+(n2[i] - '0') + carry);
 }
+return (r);
 }
