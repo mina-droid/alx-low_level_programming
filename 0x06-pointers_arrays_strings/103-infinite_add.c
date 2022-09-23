@@ -111,6 +111,8 @@ rev_string(n2);
 for (i = 0; i < nSmall; i++)
 {
 sum = ((n1[i] - '0')+(n2[i] - '0') + carry);
+r = _strcat(r, (sum % 10 + '0'));
+carry = sum / 10;
 }
 return (r);
 }
