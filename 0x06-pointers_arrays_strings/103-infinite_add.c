@@ -96,7 +96,7 @@ int sum;
 int i;
 if (nstr1 + nstr2 >= size_r)
 {
-return (0);
+return ('\0');
 }
 if (_strlen(n1) > _strlen(n2))
 {
