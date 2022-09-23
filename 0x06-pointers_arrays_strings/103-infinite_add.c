@@ -1,6 +1,28 @@
 #include "main.h"
 
 /**
+ *_strcat - convert a string to an integer.
+ * @dest: string one
+ *
+ * @src: string two
+ *
+ * Return: string
+ */
+
+char *_strcat(char *dest, char *src)
+{
+int dest_len = _strlen(dest);
+while (*src != '\0')
+{
+dest[dest_len] = *src;
+dest_len++;
+src++;
+}
+dest[dest_len] = '\0';
+return (dest);
+}
+
+/**
  * rev_string - prints reversed string, followed by a new line
  * @s: pointer to the string to print
  * Return: void
@@ -71,6 +93,7 @@ int nstr1 = _strlen(n1);
 int nstr2 = _strlen(n2);
 int carry = 0;
 int sum;
+int i;
 if (nstr1 + nstr2 >= size_r)
 {
 return (0);
@@ -82,5 +105,11 @@ nSmall = _strlen(n2);
 else
 {
 nSmall = _strlen(n1);
+}
+rev_string(n1);
+rev_string(n2);
+for (i = 0; i < nSmall; i++)
+{
+sum = ((n1[i] - '0')+(n2[i] - '0') + carry);
 }
 }
