@@ -37,7 +37,7 @@ return (oc);
  * Return: the pointer to dest.
  */
 
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
 {
 unsigned int res = 0;
 char *f;
