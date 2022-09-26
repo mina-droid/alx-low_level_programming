@@ -40,7 +40,7 @@ return (oc);
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int res = 0;
-char *f;
+char *f = '\0';
 int i;
 for (i = 0; s[i] != '\0'; i++)
 {
