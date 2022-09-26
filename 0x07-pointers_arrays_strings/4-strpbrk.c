@@ -12,13 +12,13 @@
 char *_strpbrk(char *s, char *accept)
 {
 int i, j, pos, flag = 0;
-for (i = 0; string1[i] != '\0';i++);
+for (i = 0; s[i] != '\0'; i++);
 pos = i;
-for (i = 0;string2[i] != '\0';i++)
+for (i = 0; accept[i] != '\0'; i++)
 {
-for (j = 0;string1[j] != '\0';j++)
+for (j = 0; s[j] != '\0'; j++)
 {
-if (string2[i] == string1[j])
+if (accept[i] == s[j])
 {
 if (j <= pos)
 {
@@ -30,7 +30,7 @@ flag = 1;
 }
 if (flag == 1)
 {
-return &string1[pos];
+return (&s[pos]);
 }
 else
 {
