@@ -41,7 +41,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int res = 0;
 char *f = '\0';
-int i;
+unsigned int i;
 for (i = 0; s[i] != '\0'; i++)
 {
 f = _strchr(s, accept[i]);
