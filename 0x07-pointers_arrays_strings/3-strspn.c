@@ -29,7 +29,7 @@ return (oc);
 }
 
 /**
- *_strspn - encodes a string using rot13
+ * _strspn - encodes a string using rot13
  * @s: input string.
  *
  * @accept: input string.
