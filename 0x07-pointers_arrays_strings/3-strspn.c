@@ -44,11 +44,12 @@ char *f;
 int i;
 for (i = 0; s[i] != '\0'; i++)
 {
-f = _strchr(accept, s[i]);
+f = _strchr(s, accept[i]);
 if (f != NULL)
 {
 res++;
 }
 }
+res++;
 return (res);
 }
