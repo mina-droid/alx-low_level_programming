@@ -45,7 +45,7 @@ int i;
 for (i = 0; s[i] != '\0'; i++)
 {
 f = _strchr(s, accept[i]);
-if (f != NULL)
+if (f != '\0')
 {
 res++;
 }
