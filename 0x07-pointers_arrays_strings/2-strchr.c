@@ -21,5 +21,9 @@ oc = &s[i];
 break;
 }
 }
+if (s[i] == c)
+{
+oc = &s[i];
+}
 return (oc);
 }
