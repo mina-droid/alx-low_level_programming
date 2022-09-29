@@ -11,7 +11,7 @@ int _evaluate(int i, int n)
 
 if (n % i == 0)
 {
- return (0);
+return (0);
 }
 else if (i >= n / 2)
 {
