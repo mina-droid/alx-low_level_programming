@@ -1,20 +1,27 @@
 #include "main.h"
 /**
- *isqrt_rec - encodes a string using rot13
- * @n: input number.
- *
- * @k: input number.
- *
- * Return: the pointer to dest.
+ *_evaluate - evaluate function sqrt
+ *@i: interger
+ *@n: interger
+ *Return: evaluate sqrt
  */
 
-int isqrt_rec(int k, int n) {	 
-	int next_k = (k + n/k) / 2; 
-	if (k*k <= n && (k+1)*(k+1) > n)  
-		return k; 
-	else 
-		return isqrt_rec(next_k, n); 
-} 
+int _evaluate(int i, int n)
+{
+/*Evaluate function*/
+if (n == 0 || n == 1)
+return (n);
+
+else if (i * i < n)
+return (_evaluate(i + 1, n));
+
+else if (i * i == n) /*Condiction base*/
+return (i);
+
+return (-1);
+
+return (-1);
+}
 
 /**
  *_sqrt_recursion - encodes a string using rot13
@@ -25,8 +32,7 @@ int isqrt_rec(int k, int n) {
 
 int _sqrt_recursion(int n)
 {
-int k = 1;
-int res;
+int k = 0;
 if (n < 0)
 {
 return (-1);
@@ -41,11 +47,7 @@ return (n);
 }
 else
 {
-res = isqrt_rec(k,n);
-if (res * res == n)
-{
-return (res);
+return(_evaluate(k, n));
 }
 return (-1);
-}
 }
