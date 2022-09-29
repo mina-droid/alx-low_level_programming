@@ -19,7 +19,7 @@ return (1);
 }
 else
 {
-_evaluate(i + 1, n);
+return (_evaluate(i + 1, n));
 }
 }
 
