@@ -9,7 +9,6 @@
 
 int _evaluate(char *start, char *end, char *s)
 {
-printf("start = %c and end = %c\n", *start, *end);
 if (*start != *end)
 {
 return (0);
