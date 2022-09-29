@@ -2,8 +2,9 @@
 
 /**
  *_evaluate - evaluate function sqrt
- *@i: interger
- *@n: interger
+ *@start: interger
+ *@end: interger
+  *@s: interger
  *Return: evaluate sqrt
  */
 
@@ -71,6 +72,6 @@ return (1);
 }
 else
 {
-return(_evaluate(start, end, s));
+return (_evaluate(start, end, s));
 }
 }
