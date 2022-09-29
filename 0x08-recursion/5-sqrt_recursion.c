@@ -47,7 +47,7 @@ return (n);
 }
 else
 {
-return(_evaluate(k, n));
+return (_evaluate(k, n));
 }
 return (-1);
 }
