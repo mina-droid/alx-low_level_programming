@@ -19,7 +19,7 @@ if (argc < 3)
 printf("0\n");
 return (0);
 }
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 if (!isdigit(argv[i]))
 {
