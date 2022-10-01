@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- *main - encodes a string using rot13
- * @argc: arguments number.
- *
- * @argv: array of arguments.
- *
- * Return: the pointer to dest.
+ * main - function
+ *@argc: length of argv
+ *@argv: number of argument
+ *Return: Always 0
  */
 
 int main (int argc, char *argv[])
