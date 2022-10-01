@@ -29,27 +29,27 @@ while (cent > 0)
 if (cent >= 25)
 {
 cent -= 25;
-counter++;
+counter ++;
 }
 else if (cent >= 10)
 {
 cent -= 10;
-counter++;
+counter ++;
 }
 else if (cent >= 5)
 {
 cent -= 5;
-counter++;
+counter ++;
 }
 else if (cent >= 2)
 {
 cent -= 2;
-counter++;
+counter ++;
 }
 else if (cent >= 1)
 {
 cent -= 1;
-counter++;
+counter ++;
 }
 }
 printf("%d\n", counter);
