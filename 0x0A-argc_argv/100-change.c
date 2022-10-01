@@ -8,49 +8,44 @@
  *Return: Always 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-int cent, counter;
-counter = 0;
+/*Declaring variables*/
+int position, total, change, aux;
+int coins[] = {25, 10, 5, 2, 1}; /*Array int*/
+
+position = total = change = aux = 0;
+
 if (argc != 2)
 {
-printf ("Error\n");
+printf("Error\n");
 return (1);
 }
-cent = atoi (argv[1]);
-if (cent < 0)
+
+total = atoi(argv[1]); /*Covert str to int*/
+
+if (total <= 0)
 {
 printf("0\n");
 return (0);
 }
-while (cent > 0)
+
+/*Declaring While*/
+
+while (coins[position] != '\0')
+
 {
-if (cent >= 25)
+if (total >= coins[position])
 {
-cent -= 25;
-counter++;
+aux = (total / coins[position]);
+change += aux;
+total -= coins[position] * aux;
 }
-else if (cent >= 10)
-{
-cent -= 10;
-counter++;
+
+position++;
+
 }
-else if (cent >= 5)
-{
-cent -= 5;
-counter++;
-}
-else if (cent >= 2)
-{
-cent -= 2;
-counter++;
-}
-else if (cent >= 1)
-{
-cent -= 1;
-counter++;
-}
-}
-printf ("%d\n", counter);
+
+printf("%d\n", change);
 return (0);
 }
