@@ -1,34 +1,73 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
+
 /**
- *main - encodes a string using rot13
- * @argc: arguments number.
+ * check_num - check - string there are digit
+ * @str: array str
  *
- * @argv: array of arguments.
+ * Return; Always 0 (Success)
+ */
+
+int check_num(char *str)
+
+{
+/*Declaring variables*/
+unsigned int count;
+
+count = 0;
+while (count < strlen(str)) /*count string*/
+
+{
+if (!isdigit(str[count])) /*check if str there are digit*/
+{
+return (0);
+}
+
+count++;
+}
+return (1);
+}
+
+/**
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
  *
- * Return: the pointer to dest.
+ * return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
+
 {
-int i, sum;
-sum = 0;
-if (argc < 2)
+
+/*Declaring variables*/
+int count;
+int str_to_int;
+int sum = 0;
+
+count = 1;
+while (count < argc) /*Goes through the whole array*/
 {
-printf("%d\n", sum);
-return (0);
+if(check_num(argv[count]))
+
+{
+str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+sum += str_to_int;
 }
-for (i = 1; i < argc; i++)
-{
-if (!(isdigit(argv[i])))
+
+/*Condition if one of the number contains symbols that are not digits*/
+else
 {
 printf("Error\n");
 return (1);
 }
-sum += atoi(argv[i]);
+
+count++;
 }
-printf("%d\n", sum);
+
+printf("%d\n", sum); /*print sum*/
+
 return (0);
 }
