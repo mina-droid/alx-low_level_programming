@@ -1,25 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-/**
- *_strcpy - copy arrays
- *@src: array of elements
- *@dest: dest array
- *Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-int i = 0;
-
-while (src[i] != '\0')
-{
-dest[i] = src[i];
-i++;
-}
-dest[i] = '\0';
-
-return (dest);
-}
 
 /**
  *_strlen_recursion - encodes a string using rot13
@@ -41,25 +21,61 @@ return (1 + _strlen_recursion(s + 1));
 }
 
 /**
- * _strdup - function
- *@str: length of argv
+ *_strcat - convert a string to an integer.
+ * @dest: string one
+ *
+ * @src: string two
+ *
+ * Return: string
+ */
+
+char *_strcat(char *dest, char *src)
+{
+int dest_len = _strlen_recursion(dest);
+while (*src != '\0')
+{
+dest[dest_len] = *src;
+dest_len++;
+src++;
+}
+dest[dest_len] = '\0';
+return (dest);
+}
+
+/**
+ * str_concat - function
+ *@s1: length of argv
+ *@s2: length of argv
  *Return: Always 0
  */
 
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-int len;
-char *strup;
-if (str == NULL)
+int len1, len2;
+char *strcon;
+if (s1 == NULL)
+{
+*s1 = '\0';
+}
+if (s2 == NULL)
+{
+*s2 = '\0';
+}
+len1 = _strlen_recursion(s1);
+len2 = _strlen_recursion(s2);
+strcon = malloc((sizeof(char) * (len1 + len2)) +1);
+if (strcon == NULL)
 {
 return (NULL);
 }
-len = _strlen_recursion(str);
-strup = malloc((sizeof(char) * len) +1);
-if (strup == NULL)
+for (i = 0; *(s1 + i) != '\0'; i++)
 {
-return (NULL);
+*(strcon + i) = *(s1 + i);
 }
-_strcpy(strup, str);
-return (strup);
+for (j = 0; *(s2 + j) != '\0'; j++)
+{
+*(strcon + i) = *(s2 + j);
+i++;
+}
+return (strcon);
 }
