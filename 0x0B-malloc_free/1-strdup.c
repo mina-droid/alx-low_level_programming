@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ *_strcpy - copy arrays
+ *@src: array of elements
+ *@dest: dest array
+ *Return: dest
+ */
 
 char *_strcpy(char *dest, char *src)
 {
