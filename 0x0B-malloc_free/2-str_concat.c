@@ -55,11 +55,11 @@ int len1, len2, i, j;
 char *strcon;
 if (s1 == NULL)
 {
-*s1 = '\0';
+*s1 = "";
 }
 if (s2 == NULL)
 {
-*s2 = '\0';
+*s2 = "";
 }
 len1 = _strlen_recursion(s1);
 len2 = _strlen_recursion(s2);
