@@ -35,7 +35,7 @@ if (str == NULL)
 return (NULL);
 }
 len = _strlen_recursion(str);
-strup = malloc((sizeof(char) * len) + 1);
+strup = malloc((sizeof(char) * len) +1);
 if (strup == NULL)
 {
 return (NULL);
