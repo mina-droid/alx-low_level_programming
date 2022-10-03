@@ -18,13 +18,17 @@ if (width == 0 || height == 0 || width < 0 || height < 0)
 return (NULL);
 }
 res = malloc(sizeof(int *) * height);
-for (i = 0; i < height; i++)
-{
-res[i] = malloc(sizeof(int) * width);
-}
 if (res == NULL)
 {
 return (NULL);
+}
+for (i = 0; i < height; i++)
+{
+res[i] = malloc(sizeof(int) * width);
+if (res[i] == NULL)
+{
+return (NULL);
+}
 }
 for (i = 0; i < height; i++)
 {
