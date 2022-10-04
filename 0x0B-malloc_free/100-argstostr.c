@@ -27,6 +27,44 @@ return (1 + _strlen_recursion(s + 1));
  *Return: Always 0
  */
 
+/**
+ * str_concat - function
+ *@s1: length of argv
+ *@s2: length of argv
+ *Return: Always 0
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+int len1, len2, i, j;
+char *strcon;
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
+len1 = _strlen_recursion(s1);
+len2 = _strlen_recursion(s2);
+strcon = malloc((sizeof(char) * (len1 + len2)) +1);
+if (strcon == NULL)
+{
+return (NULL);
+}
+for (i = 0; *(s1 + i) != '\0'; i++)
+{
+*(strcon + i) = *(s1 + i);
+}
+for (j = 0; *(s2 + j) != '\0'; j++)
+{
+*(strcon + i) = *(s2 + j);
+i++;
+}
+return (strcon);
+}
+
 char *argstostr(int ac, char **av)
 {
 int size, i;
@@ -39,6 +77,15 @@ for (i = 0; i < ac; i++)
 {
 size += _strlen_recursion(av[i]);
 }
-res = malloc(sizeof(char) * size);
-
+res = malloc((sizeof(char) * size) + ac);
+for (i = 1; i < ac; i++)
+{
+if (av[i] == "\"")
+{
+continue;
+}
+res = str_concat(res, av[i]);
+res = str_concat(res, "\n");
+}
+return (res);
 }
