@@ -92,7 +92,7 @@ return (strcon);
 
 char *argstostr(int ac, char **av)
 {
-int size, i;
+int size = 0, i;
 char *res;
 if (ac == 0 || av == NULL)
 {
