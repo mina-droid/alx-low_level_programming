@@ -45,13 +45,6 @@ return (1 + _strlen_recursion(s + 1));
 }
 
 /**
- * argstostr - function
- *@ac: length of argv
- *@av: length of argv
- *Return: Always 0
- */
-
-/**
  * str_concat - function
  *@s1: length of argv
  *@s2: length of argv
@@ -89,6 +82,14 @@ i++;
 return (strcon);
 }
 
+/**
+ * argstostr - function
+ *@ac: length of argv
+ *@av: length of argv
+ *Return: Always 0
+ */
+
+
 char *argstostr(int ac, char **av)
 {
 int size, i;
@@ -101,7 +102,7 @@ for (i = 0; i < ac; i++)
 {
 size += _strlen_recursion(av[i]);
 }
-res = malloc((sizeof(char) * (size + 1)));
+res = malloc((sizeof(char) * (size - 1)));
 for (i = 0; i < ac; i++)
 {
 if (_strcmp(av[i], "\"") == 0)
