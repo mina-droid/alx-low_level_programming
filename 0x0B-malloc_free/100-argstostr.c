@@ -92,7 +92,7 @@ return (strcon);
 
 char *argstostr(int ac, char **av)
 {
-int size = 0, i;
+int size = 0, i, j;
 char *res;
 if (ac == 0 || av == NULL)
 {
@@ -100,9 +100,12 @@ return (NULL);
 }
 for (i = 0; i < ac; i++)
 {
-size += _strlen_recursion(av[i]);
+for (j = 0; av[i][j] != '\0'; j++)
+{
+size++;
 }
-res = malloc((sizeof(char) * (size - 1)));
+}
+res = malloc((sizeof(char) * (size + 1 + ac)));
 for (i = 0; i < ac; i++)
 {
 if (_strcmp(av[i], "\"") == 0)
