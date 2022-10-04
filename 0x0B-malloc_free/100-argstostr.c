@@ -95,7 +95,7 @@ return (res);
 
 char *argstostr(int ac, char **av)
 {
-int size = 0, i = 0, j = 0;
+int size = 0, i = 0, j = 0 , l = 0;
 char *res;
 if (ac == 0 || av == NULL)
 {
@@ -122,8 +122,13 @@ if (_strcmp(av[i], "\"") == 0)
 {
 continue;
 }
-res = str_concat(res, av[i]);
-res = str_concat(res, "\n");
+for (j = 0; av[i][j] != '\0'; j++)
+{
+res[l] = av[i][j];
+l++;
+}
+res[l] = '\n';
+l++;
 }
 return (res);
 }
