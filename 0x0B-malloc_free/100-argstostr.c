@@ -55,6 +55,7 @@ char *str_concat(char *s1, char *s2)
 {
 int len1, len2, i, j;
 char *strcon;
+char *res;
 if (s1 == NULL)
 {
 s1 = "";
@@ -79,7 +80,8 @@ for (j = 0; *(s2 + j) != '\0'; j++)
 *(strcon + i) = *(s2 + j);
 i++;
 }
-return (strcon);
+res = strcon;
+return (res);
 }
 
 /**
@@ -108,7 +110,7 @@ j++;
 }
 i++;
 }
-res = malloc((sizeof(char) * size) -50);
+res = malloc((sizeof(char) * size));
 if (res == NULL)
 {
 return (NULL);
