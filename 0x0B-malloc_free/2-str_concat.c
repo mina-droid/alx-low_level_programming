@@ -21,28 +21,6 @@ return (1 + _strlen_recursion(s + 1));
 }
 
 /**
- *_strcat - convert a string to an integer.
- * @dest: string one
- *
- * @src: string two
- *
- * Return: string
- */
-
-char *_strcat(char *dest, char *src)
-{
-int dest_len = _strlen_recursion(dest);
-while (*src != '\0')
-{
-dest[dest_len] = *src;
-dest_len++;
-src++;
-}
-dest[dest_len] = '\0';
-return (dest);
-}
-
-/**
  * str_concat - function
  *@s1: length of argv
  *@s2: length of argv
