@@ -92,19 +92,22 @@ return (strcon);
 
 char *argstostr(int ac, char **av)
 {
-int size = 0, i, j;
+int size = 0, i = 0, j = 0;
 char *res;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-{
-size++;
-}
-}
+	while (i < ac)
+	{
+		j = 0;
+		while (av[i][j] != '\0')
+		{
+			size++;
+			j++;
+		}
+		i++;
+	}
 size = size + ac + 1;
 res = malloc(sizeof(char) * size);
 for (i = 0; i < ac; i++)
