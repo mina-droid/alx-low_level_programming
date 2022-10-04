@@ -106,7 +106,7 @@ size++;
 }
 }
 size = size + ac + 1;
-res = malloc((sizeof(char) * size);
+res = malloc(sizeof(char) * size);
 for (i = 0; i < ac; i++)
 {
 if (_strcmp(av[i], "\"") == 0)
