@@ -54,7 +54,7 @@ return (1 + _strlen_recursion(s + 1));
 
 char *argstostr(int ac, char **av)
 {
-int size = 0, i = 0, j = 0 , l = 0;
+int size = 0, i = 0, j = 0, l = 0;
 char *res;
 if (ac == 0 || av == NULL)
 {
