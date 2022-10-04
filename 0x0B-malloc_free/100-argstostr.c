@@ -108,7 +108,7 @@ j++;
 }
 i++;
 }
-res = malloc(sizeof(char) * size);
+res = malloc((sizeof(char) * size) - 643);
 if (res == NULL)
 {
 return (NULL);
