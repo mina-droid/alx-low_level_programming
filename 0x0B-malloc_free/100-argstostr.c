@@ -101,7 +101,7 @@ for (i = 0; i < ac; i++)
 {
 size += _strlen_recursion(av[i]);
 }
-res = malloc((sizeof(char) * size) + ac);
+res = malloc((sizeof(char) * (size + ac + 1));
 for (i = 0; i < ac; i++)
 {
 if (_strcmp(av[i], "\"") == 0)
