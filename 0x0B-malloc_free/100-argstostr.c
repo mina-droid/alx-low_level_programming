@@ -81,6 +81,7 @@ for (j = 0; *(s2 + j) != '\0'; j++)
 i++;
 }
 res = strcon;
+free (strcon);
 return (res);
 }
 
