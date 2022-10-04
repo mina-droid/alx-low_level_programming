@@ -98,18 +98,22 @@ if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
-	while (i < ac)
-	{
-		j = 0;
-		while (av[i][j] != '\0')
-		{
-			size++;
-			j++;
-		}
-		i++;
-	}
+while (i < ac)
+{
+j = 0;
+while (av[i][j] != '\0')
+{
+size++;
+j++;
+}
+i++;
+}
 size = size + ac + 1;
 res = malloc(sizeof(char) * size);
+if (res == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < ac; i++)
 {
 if (_strcmp(av[i], "\"") == 0)
