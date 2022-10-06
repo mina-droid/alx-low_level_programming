@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
-/*
-*malloc_checked - allocate space
-*@b:intger
-*/
+/**
+ *malloc_checked - array for prints a string
+ *@b: number of memory
+ *Return: void
+ */
 
 void *malloc_checked(unsigned int b)
 {
