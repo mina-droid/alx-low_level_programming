@@ -26,6 +26,10 @@ if (new_size == old_size)
 return (ptr);
 }
 tmpPtr = malloc(new_size);
+if (tmpPtr == NULL)
+{
+return (NULL);
+}
 free(ptr);
 ptr = tmpPtr;
 free(tmpPtr);
