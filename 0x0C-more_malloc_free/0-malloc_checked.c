@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /*
-*malloc_checked-allocate space
+*malloc_checked - allocate space
 *@b:intger
 */
 
