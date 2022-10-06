@@ -37,7 +37,5 @@ for (i = 0; i < (old_size || i < new_size); i++)
 *(tmpPtr + i) = clone[i];
 }
 free(ptr);
-ptr = tmpPtr;
-free(tmpPtr);
-return (ptr);
+return (tmpPtr);
 }
