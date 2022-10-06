@@ -22,7 +22,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-printf ("size = %d\n", size);
 for (i = 0; i < size + 1 && min <= max; i++)
 {
 ptr[i] = min;
