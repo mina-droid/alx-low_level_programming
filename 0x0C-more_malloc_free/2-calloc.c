@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
-/*
-*_calloc-allocate space
-*@nmemb:intger
-*@size:intger
-*/
+/**
+ *_calloc - array for prints a string
+ *@nmemb: number of memory
+ *@size: number of memory
+ *Return: void
+ */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
