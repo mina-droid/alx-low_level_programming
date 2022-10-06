@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
-/*
-*array_range-allocate space
-*@min:intger
-*@max:intger
-*/
+/**
+ *array_range - array for prints a string
+ *@min: number of memory
+ *@max: number of memory
+ *Return: void
+ */
 
 int *array_range(int min, int max)
 {
@@ -14,12 +15,6 @@ int size;
 if (min > max)
 {
 return (NULL);
-}
-if (min == max)
-{
-ptr = malloc(1);
-ptr[i] = min;
-return (ptr);
 }
 size = max - min;
 ptr = malloc((size + 1) * sizeof(int));
