@@ -46,6 +46,10 @@ if (n >= len2)
 n = len2;
 }
 strcon = malloc((sizeof(char) * (len1 + n)) +1);
+if (strcon == NULL)
+{
+return (NULL);
+}  
 for (i = 0; *(s1 + i) != '\0'; i++)
 {
 *(strcon + i) = *(s1 + i);
