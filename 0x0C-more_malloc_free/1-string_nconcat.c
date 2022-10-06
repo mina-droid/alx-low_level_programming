@@ -7,7 +7,7 @@
  * Return: the pointer to dest.
  */
 
-int _strlen_recursion(char *s)
+unsigned int _strlen_recursion(char *s)
 
 {
 if (*s == '\0')
