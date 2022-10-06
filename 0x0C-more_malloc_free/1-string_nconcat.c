@@ -30,6 +30,7 @@ return (1 + _strlen_recursion(s + 1));
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int len1, len2, i;
+char *strcon;
 if (s1 == NULL)
 {
 s1 = "";
@@ -38,9 +39,21 @@ if (s2 == NULL)
 {
 s2 = "";
 }
+len1 = _strlen_recursion(s1);
 len2 = _strlen_recursion(s2);
 if (n >= len2)
 {
 n = len2;
 }
+strcon = malloc((sizeof(char) * (len1 + n)) +1);\
+for (i = 0; *(s1 + i) != '\0'; i++)
+{
+*(strcon + i) = *(s1 + i);
+}
+for (j = 0; *(s2 + j) != '\0' || j < n; j++)
+{
+*(strcon + i) = *(s2 + j);
+i++;
+}
+return (strcon);
 }
