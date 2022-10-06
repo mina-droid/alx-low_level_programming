@@ -55,5 +55,6 @@ for (j = 0; *(s2 + j) != '\0' && j < n; j++)
 *(strcon + i) = *(s2 + j);
 i++;
 }
+*(strcon + i) = '\0';
 return (strcon);
 }
