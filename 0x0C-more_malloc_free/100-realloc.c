@@ -33,7 +33,7 @@ return (NULL);
 }
 for (i = 0; i < (old_size || i < new_size); i++)
 {
-*(tmpPtr + i) = ptr[i];
+*(tmpPtr + i) = *ptr;
 }
 free(ptr);
 ptr = tmpPtr;
