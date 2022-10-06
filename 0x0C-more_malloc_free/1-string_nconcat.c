@@ -29,7 +29,7 @@ return (1 + _strlen_recursion(s + 1));
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int len1, len2, i;
+unsigned int len1, len2, i, j;
 char *strcon;
 if (s1 == NULL)
 {
@@ -45,7 +45,7 @@ if (n >= len2)
 {
 n = len2;
 }
-strcon = malloc((sizeof(char) * (len1 + n)) +1);\
+strcon = malloc((sizeof(char) * (len1 + n)) +1);
 for (i = 0; *(s1 + i) != '\0'; i++)
 {
 *(strcon + i) = *(s1 + i);
