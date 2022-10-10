@@ -1,3 +1,4 @@
+
 /**
  * struct dog - Struct dog
  * @name: name
