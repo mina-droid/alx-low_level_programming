@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 int num1, num2, res;
-if (argc < 4)
+if (argc != 4)
 {
 printf("Error\n");
 exit(98);
