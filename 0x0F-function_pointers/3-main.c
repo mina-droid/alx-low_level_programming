@@ -31,6 +31,6 @@ if (!reqfunc)
 printf("Erorr\n");
 exit(99);
 }
-res = reqfunnc(num1, num2);
+res = reqfunc(num1, num2);
 printf("%d\n", res);
 }
