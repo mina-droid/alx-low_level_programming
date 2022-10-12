@@ -1,14 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "calc.h"
 
 /**
-*op_add-dog init
-*@a:intger 1
-*@b:intger 2
+*main-function
+*@argc:intger 1
+*@argv:array of strings
 */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int num1, num2, res;
 int (*reqfunc)(int, int);
