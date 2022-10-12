@@ -6,6 +6,7 @@
 *@array:array
 *@size:array size
 *@cmp:function to be called
+*Return: int
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
