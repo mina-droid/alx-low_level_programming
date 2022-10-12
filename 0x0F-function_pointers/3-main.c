@@ -28,7 +28,7 @@ exit(100);
 reqfunc = get_op_func(argv[2]);
 if (!reqfunc)
 {
-printf("Erorr\n");
+printf("Error\n");
 exit(99);
 }
 res = reqfunc(num1, num2);
