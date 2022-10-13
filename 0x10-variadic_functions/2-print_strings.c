@@ -17,7 +17,6 @@ for (i = 0; i < n; i++)
 if (va_arg(argL, char *) == NULL)
 {
 printf("(nil)");
-va_arg(argL, char *);
 continue;
 }
 printf("%s", va_arg(argL, char *));
