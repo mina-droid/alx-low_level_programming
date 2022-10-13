@@ -16,6 +16,5 @@ for (i = 0; i < n; i++)
 {
 printf("hi");
 }
-_putchar('\n');
 va_end(argL);
 }
