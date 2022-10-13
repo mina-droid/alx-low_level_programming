@@ -14,7 +14,7 @@ unsigned int i;
 va_start(argL, n);
 for (i = 0; i < n; i++)
 {
-printf("%d%s ", va_arg(argL, int), separator)
+printf("hi");
 }
 _putchar('\n');
 va_end(argL);
