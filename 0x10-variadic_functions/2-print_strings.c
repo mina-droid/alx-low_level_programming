@@ -14,12 +14,14 @@ unsigned int i;
 va_start(argL, n);
 for (i = 0; i < n; i++)
 {
-if (va_arg(argL, char *) == NULL)
+if (va_arg(argL, char *) != NULL)
+{
+printf("%s", va_arg(argL, char *));
+}
+else
 {
 printf("(nil)");
-continue;
 }
-printf("%s", va_arg(argL, char *));
 if (separator && i < n - 1)
 {
 printf("%s", separator);
