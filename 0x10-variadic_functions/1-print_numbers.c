@@ -18,5 +18,4 @@ printf("%d%s ", va_arg(argL, int), separator)
 }
 _putchar('\n');
 va_end(argL);
-return;
 }
