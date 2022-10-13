@@ -11,12 +11,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list argL;
 unsigned int i;
+char *str;
 va_start(argL, n);
 for (i = 0; i < n; i++)
 {
-if (va_arg(argL, char *) != NULL)
+str = va_arg(argL, char *);
+if (str != NULL)
 {
-printf("%s", va_arg(argL, char *));
+printf("%s", str);
 }
 else
 {
