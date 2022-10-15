@@ -1,9 +1,4 @@
-/*
- * File: 3-print_all.c
- * Auth: Tolulope Fakunle
- */
-
-#include "variadic_functions.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -81,7 +76,7 @@ void print_string(va_list arg)
  *              or char * is ignored.
  *              If a string argument is NULL, (nil) is printed instead.
  */
-void print_all(const char * const format, ...)
+int _printf(const char *format, ...);
 {
 	va_list args;
 	int i = 0, j = 0;
@@ -104,7 +99,7 @@ void print_all(const char * const format, ...)
 
 		if (j < 4)
 		{
-			printf("%s", separator);
+			write(stdout, separator, sizeof(separator));
 			funcs[j].print(args);
 			separator = ", ";
 		}
