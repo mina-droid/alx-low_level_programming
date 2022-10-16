@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _printf - prints anything.
@@ -12,43 +13,46 @@
 int _printf(const char *format, ...)
 {
 	va_list valist;
-	unsigned int i = 0, j, c = 0;
+	unsigned int i = 0, j;
 	char *str;
-	const char t_arg[] = "cifs";
+	char c;
+	int count = 0;
 
 	va_start(valist, format);
 	while (format && format[i])
 	{
-		j = 0;
-		while (t_arg[j])
+		if (format[i] == '%')
 		{
-			if (format[i] == t_arg[j] && c)
+			i++;
+			if(format[i] == 'c')
 			{
-				printf(", ");
-				break;
-			} j++;
-		}
-		switch (format[i])
-		{
-		case 'c':
-			printf("%c", va_arg(valist, int)), c = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(valist, int)), c = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(valist, double)), c = 1;
-			break;
-		case 's':
-			str = va_arg(valist, char *), c = 1;
-			if (!str)
-			{
-				printf("(nil)");
-				break;
+				c = va_arg(valist, int);
+				write(1, &c, sizeof(char));
+				count++;
+				i++;
+				continue;
 			}
-			printf("%s", str);
-			break;
-		} i++;
+			else if (format[i] == 's')
+			{	
+				str = va_arg(valist, char *);
+				write(1, str, strlen(str));
+				count += strlen(str);
+				i++;
+				continue;
+			}
+            else if (format[i] == '%')
+			{	
+				c = 37;
+				write(1, &c, sizeof(char));
+				count++;
+				i++;
+				continue;
+			}
+		}
+		write(1, &format[i], sizeof(char));
+		count++;
+		i++;
 	}
-	printf("\n"), va_end(valist);
+	 va_end(valist);
+	return (count);
 }
