@@ -12,9 +12,10 @@
 *@next: pointer to next node
 */
 
-typedef struct lists {
+typedef struct lists 
+{
 char *str;
-int len;
+unsigned int len;
 lists *next;
 } list_t;
 
