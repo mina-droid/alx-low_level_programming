@@ -4,7 +4,7 @@
 typedef struct lists *listPtr;
 
 /**
-*lists- list struct
+*struct lists- list struct
 *@value: data
 *@next: pointer to next node
 */
