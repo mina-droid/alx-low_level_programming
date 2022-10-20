@@ -15,7 +15,7 @@ while (head != NULL)
 temp = head;
 free(head->str);
 head = head->next;
-free(temp)
+free(temp);
 }
 free(head);
 }
