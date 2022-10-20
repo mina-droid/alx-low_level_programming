@@ -52,7 +52,7 @@ if (*head == NULL)
 {
 *head = newNode;
 }
-else 
+else
 {
 lastNode = *head;
 while (lastNode->next != NULL)
