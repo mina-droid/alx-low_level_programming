@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct lists *listPtr;
+
 /**
 *struct lists- list struct
 *@str: string
@@ -12,12 +12,11 @@ typedef struct lists *listPtr;
 *@next: pointer to next node
 */
 
-struct lists {
+typedef struct lists {
 char *str;
 int len;
-listPtr next;
-};
-typedef struct lists list_t;
+lists *next;
+} list_t;
 
 int _strlen_recursion(char *s);
 int _putchar(char c);
