@@ -7,7 +7,8 @@
 typedef struct lists *listPtr;
 /**
 *struct lists- list struct
-*@value: data
+*@str: string
+*@len: string length
 *@next: pointer to next node
 */
 
