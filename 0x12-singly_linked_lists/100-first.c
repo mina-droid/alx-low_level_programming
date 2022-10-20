@@ -1,8 +1,6 @@
 #include "lists.h"
 /**
  * first - Prints all the elements of a list_t list.
- *
- * Return: void.
  */
 void first(void)
 {
