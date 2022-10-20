@@ -15,7 +15,7 @@ typedef struct lists *listPtr;
 struct lists {
   char *str;
   int len;
-  listPtr *next;
+  listPtr next;
 };
 typedef struct lists list_t;
 
