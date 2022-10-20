@@ -16,7 +16,7 @@ typedef struct lists
 {
 char *str;
 unsigned int len;
-lists *next;
+struct lists *next;
 } list_t;
 
 int _strlen_recursion(char *s);
