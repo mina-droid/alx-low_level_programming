@@ -7,6 +7,7 @@
 */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct list_s - singly linked list
@@ -14,8 +15,6 @@
  * @len: length of the string
  * @next: points to the next node
  *
- * Description: singly linked list node structure
- *              for Holberton project
  */
 typedef struct list_s
 {
