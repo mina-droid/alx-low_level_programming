@@ -39,6 +39,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	newStr = strdup(str);
+	if (newStr == NULL)
+	{
+		free(newNode);
+		return (NULL);
+	}
 	newLen = _strlen_recursion(newStr);
   	newNode->str = newStr;
   	newNode->len = newLen;
