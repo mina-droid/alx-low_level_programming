@@ -30,10 +30,14 @@ return (1 + _strlen_recursion(s + 1));
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t * newNode;
+	list_t *newNode;
   	char *newStr;
   	unsigned int newLen;
 	newNode = malloc(sizeof(list_t));
+	if (!newNode)
+	{
+		return (NULL);
+	}
 	newStr = strdup(str);
 	newLen = _strlen_recursion(newStr);
   	newNode->str = newStr;
