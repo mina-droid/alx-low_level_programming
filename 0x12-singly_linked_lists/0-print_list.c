@@ -27,5 +27,19 @@ return (1 + _strlen_recursion(s + 1));
 
 size_t print_list(const list_t *h);
 {
-
+size_t count = 0;
+while (h->next != NULL)
+{
+if (h->str == NULL)
+{
+printf("[0] (nil)");
+}
+else
+{
+printf("[%d] %s", h->len, h->str);
+}
+count++;
+h = h->next;
+}
+return (count);
 }
