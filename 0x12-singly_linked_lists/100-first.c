@@ -1,4 +1,5 @@
-#include "lists.h"
+#include <stdio.h>
+void __attribute__((constructor)) first(void);
 /**
  * first - Prints all the elements of a list_t list.
  */
