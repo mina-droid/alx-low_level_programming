@@ -30,24 +30,24 @@ return (1 + _strlen_recursion(s + 1));
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newNode;
-  	char *newStr;
-  	unsigned int newLen;
-	newNode = malloc(sizeof(list_t));
-	if (newNode == NULL)
-	{
-		return (NULL);
-	}
-	newStr = strdup(str);
-	if (newStr == NULL)
-	{
-		free(newNode);
-		return (NULL);
-	}
-	newLen = _strlen_recursion(newStr);
-  	newNode->str = newStr;
-  	newNode->len = newLen;
-  	newNode->next = *head;
-	*head = newNode;
-	return (newNode);
+list_t *newNode;
+char *newStr;
+unsigned int newLen;
+newNode = malloc(sizeof(list_t));
+if (newNode == NULL)
+{
+return (NULL);
+}
+newStr = strdup(str);
+if (newStr == NULL)
+{
+free(newNode);
+return (NULL);
+}
+newLen = _strlen_recursion(newStr);
+newNode->str = newStr;
+newNode->len = newLen;
+newNode->next = *head;
+*head = newNode;
+return (newNode);
 }
