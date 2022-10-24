@@ -4,7 +4,7 @@
  * insert_nodeint_at_index - Prints all the elements of a list_t list.
  * @head: The list_t list.
  * @idx: index
- * @idx: n
+ * @n: n
  * Return: void.
  */
 
