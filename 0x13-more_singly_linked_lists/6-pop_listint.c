@@ -15,6 +15,10 @@ if (head == NULL)
 {
 return (0);
 }
+if (*head == NULL)
+{
+return (0);
+}
 nodeN = (*head)->n;
 temp = *head;
 *head = (*head)->next;
