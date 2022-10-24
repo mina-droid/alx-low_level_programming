@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node - Prints all the elements of a list_t list.
+ * add_nodeint - Prints all the elements of a list_t list.
  * @head: The list_t list.
  *
- * @str: The string.
+ * @n: The string.
  *
  * Return: The new node.
  */
