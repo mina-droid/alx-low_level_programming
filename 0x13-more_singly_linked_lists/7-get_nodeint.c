@@ -22,7 +22,8 @@ return (NULL);
 }
 while (i < index)
 {
-head = (*head)->next;
+head = (*head).next;
+i++;
 }
 return (head);
 }
