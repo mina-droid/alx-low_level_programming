@@ -61,6 +61,10 @@ return (newNode);
 }
 while (i < idx)
 {
+if (itr == NULL || itr->next == NULL)
+{
+return (NULL);
+}
 if (i == (idx - 1))
 {
 newNode->next = (itr)->next;
