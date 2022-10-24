@@ -14,7 +14,7 @@ if (head == NULL)
 {
 return (0);
 }
-nodeN = *head->n;
+nodeN = (*head)->n;
 head = (*head)->next;
 *head = NULL;
 return (nodeN);
