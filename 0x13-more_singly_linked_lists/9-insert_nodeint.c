@@ -33,6 +33,10 @@ size_t len;
 unsigned int i = 0;
 listint_t *newNode;
 listint_t *itr = *head;
+if (head == NULL)
+{
+return (NULL);
+}
 if (*head == NULL)
 {
 return (NULL);
