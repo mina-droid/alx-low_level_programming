@@ -22,6 +22,6 @@ return (0);
 nodeN = (*head)->n;
 temp = *head;
 *head = (*head)->next;
-free (temp);
+free(temp);
 return (nodeN);
 }
