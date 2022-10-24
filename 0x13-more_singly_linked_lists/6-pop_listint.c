@@ -23,5 +23,6 @@ nodeN = (*head)->n;
 temp = *head;
 *head = (*head)->next;
 temp = NULL;
+free (temp);
 return (nodeN);
 }
