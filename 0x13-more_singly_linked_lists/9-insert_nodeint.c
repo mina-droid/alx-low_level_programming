@@ -53,6 +53,12 @@ return (NULL);
 }
 newNode->n = n;
 newNode->next = NULL;
+if (idx == 0)
+{
+newNode->next = itr;
+*head = newNode;
+return (newNode);
+}
 while (i < idx)
 {
 if (i == (idx - 1))
