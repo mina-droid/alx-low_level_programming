@@ -59,20 +59,12 @@ newNode->next = itr;
 *head = newNode;
 return (newNode);
 }
-while (i < idx)
+while (i < (idx - 1))
 {
-if (itr == NULL || itr->next == NULL)
-{
-return (NULL);
-}
-if (i == (idx - 1))
-{
-newNode->next = (itr)->next;
-(itr)->next = newNode;
-}
 itr = itr->next;
 i++;
 }
-itr = NULL;
+newNode->next = itr->next;
+itr->next = newNode;
 return (newNode);
 }
