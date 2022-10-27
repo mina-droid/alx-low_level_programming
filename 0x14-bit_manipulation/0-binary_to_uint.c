@@ -8,8 +8,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+int i;
+unsigned int res;
 if (b == NULL)
 {
 return (0);
 }
+sLen = _strlen_recursion(b);
+for (i = 0; b[i]; i++)
+{
+if (b[i] != '0' && b[i] != '1')
+{
+return (0);
+}
+res = 2 * res + (b[i] - '0');
+}
+return (res);
 }
