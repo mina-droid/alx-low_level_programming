@@ -14,7 +14,6 @@ if (b == NULL)
 {
 return (0);
 }
-sLen = _strlen_recursion(b);
 for (i = 0; b[i]; i++)
 {
 if (b[i] != '0' && b[i] != '1')
