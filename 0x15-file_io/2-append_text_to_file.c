@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * append_text_to_file- reads a text file and prints it to the POSIX standard output
- * @filename: pointer to text in a file
- * @text_content: number of letters
- * Return: the actual number of letters it could read and print
+ * append_text_to_file - appends text at the end of a file
+ * @filename: the name of the file
+ * @text_content: the NULL terminated string to add at end of file
+ * Return: 1 on success, -1 on failure
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
 int file, fwrite, i;
-if (text_content == NULL)
-text_content = "";
+
 if (filename == NULL)
 return (-1);
 file = open(filename, O_APPEND | O_RDWR, 0664);
 if (file == -1)
 return (-1);
+
 if (text_content != NULL)
 {
 for (i = 0; text_content[i]; i++)
