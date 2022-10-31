@@ -6,7 +6,7 @@
  * @text_content: number of letters
  * Return: the actual number of letters it could read and print
  */
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
 int file, fwrite, i;
 
